@@ -27,6 +27,6 @@ ShadowTable:Remove()
 ```
 Removes ShadowTable class and disconnects all .Changed signals.
 ### IMPORTANT!
-1. get actual version of FastSignal module [here](https://github.com/RBLXUtils/FastSignal)
-2. download ShadowTable.lua and Settings.lua
-3. paste them into your project(Settings and FastSignal should be in ShadowTable!)
+1. Get latest version of FastSignal module [here](https://github.com/RBLXUtils/FastSignal)
+2. Download ShadowTable.lua and Settings.lua
+3. Paste them into your project(Settings and FastSignal should be in ShadowTable!)
