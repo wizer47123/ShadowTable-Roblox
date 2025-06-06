@@ -1,4 +1,4 @@
---optimize 2
+--!optimize 2
 --!strict
 local FastSignal = require(script.FastSignal)
 
