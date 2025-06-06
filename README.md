@@ -3,7 +3,7 @@ ShadowTable is an simple OOP table-wrapper implementation with .Changed event an
 
 ### API
 ```ruby
-ShadowTable.New({...})
+ShadowTable.New(Data : {any}, Settings : {any})
 ```
 Creates new ShadowTable class.
 ```ruby
@@ -15,18 +15,14 @@ ShadowTable:GetProperty(PropertyName : string) : any
 ```
 Receives property(key) in ShadowTable class's data.
 ```ruby
-ShadowTable:OnChangedProperty(PropertyName : string, ... : () -> (any))
+ShadowTable:OnChangedProperty(PropertyName : string, Callback : () -> ())
 ```
 Fires when there is a change in certain property of ShadowTable class's data.
 ```ruby
-ShadowTable:OnAnyChangedProperty(...)
+ShadowTable:OnAnyChangedProperty(Callback : () -> ())
 ```
 Fires when there is a change in ANY property of ShadowTable class's data.
 ```ruby
 ShadowTable:Remove()
 ```
 Removes ShadowTable class and disconnects all .Changed signals.
-### IMPORTANT!
-1. Get latest version of FastSignal module [here](https://github.com/RBLXUtils/FastSignal)
-2. Download ShadowTable.lua and Settings.lua
-3. Paste them into your project(Settings and FastSignal should be in ShadowTable!)
