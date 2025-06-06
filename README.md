@@ -3,7 +3,7 @@ ShadowTable is an simple OOP table-wrapper implementation with .Changed event an
 
 ### API
 ```ruby
-ShadowTable.New(Data : {any}, Settings : {any})
+ShadowTable.New(Data : {any})
 ```
 Creates new ShadowTable class.
 ```ruby
@@ -15,7 +15,7 @@ ShadowTable:GetProperty(PropertyName : string) : any
 ```
 Receives property(key) in ShadowTable class's data.
 ```ruby
-ShadowTable:OnChangedProperty(PropertyName : string, Callback : () -> ())
+ShadowTable:OnChangedProperty(PropertyName : any, Callback : (NewValue : any) -> ())
 ```
 Fires when there is a change in certain property of ShadowTable class's data.
 ```ruby
